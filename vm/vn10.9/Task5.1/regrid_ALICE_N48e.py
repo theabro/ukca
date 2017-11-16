@@ -18,10 +18,12 @@
 
 # Written by N. Luke Abraham 2017-11-15 <nla27@cam.ac.uk> 
 
-# To use this script on ARCHER you should first
-#    module load anaconda/2.2.0-python2
-# To be able to use ncdump you should fist
-#    module load nco
+# To use this script on the VM you should first
+#    install-iris
+# and then open a new terminal with the correct PATHs set using the command
+#    conda
+# once you have done this, you can run the script either through ipython or
+#    /home/vagrant/miniconda2/bin/python2.7 -c 'execfile("regrid_ALICE_N48e.py")'
 
 # preamble
 import iris
@@ -34,9 +36,9 @@ import cf_units
 # name of file containing an ENDGame grid, e.g. your model output
 # NOTE: all the fields in the file should be on the same horizontal
 #       grid, as the field used MAY NOT be the first in order of STASH
-grid_file='/work/n02/n02/ukca/Tutorial/vn10.9/sample_output/Task4.1/atmosa.pa19810901_00'
+grid_file='/home/vagrant/cylc-run/u-as297/work/1/atmos/atmosa.pa19810901_00'
 # name of emissions file
-emissions_file='/work/n02/n02/ukca/Tutorial/vn10.9/Task5.1/Emissions_of_ALICE.nc'
+emissions_file='/home/vagrant/Tutorial/vn10.9/Task5.1/Emissions_of_ALICE.nc'
 
 # --- BELOW THIS LINE, NOTHING SHOULD NEED TO BE CHANGED ---
 
@@ -184,7 +186,7 @@ saver.write(ocube, local_keys=['vertical_scaling', 'missing_value','um_stash_sou
 #    }
 #
 #  whereas, the metadata of the 
-#  /work/n02/n02/hum/ancil/atmos/n48e/ukca_emiss/cmip5/2000/v1/ukca_emiss_CO.nc
+#  /home/vagrant/umdir/ancil/atmos/n48e/ukca_emiss/cmip5/2000/v1/ukca_emiss_CO.nc
 #  file is, e.g.:
 #
 #    netcdf ukca_emiss_CO {
