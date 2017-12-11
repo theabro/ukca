@@ -24,6 +24,10 @@
 #    conda
 # once you have done this, you can run the script either through ipython or
 #    /home/vagrant/miniconda2/bin/python2.7 -c 'execfile("regrid_ALICE_N48e.py")'
+# To use this script on ARCHER you should first
+#    module load anaconda/2.2.0-python2
+# To be able to use ncdump you should fist
+#    module load nco
 
 # preamble
 import iris
