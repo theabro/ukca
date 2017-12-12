@@ -55,7 +55,7 @@ ukca.add_aux_factory(factory)
 # now calculate the height from the bounds
 bounds = ukca.coord('altitude').bounds[:,:,:,1] - ukca.coord('altitude').bounds[:,:,:,0]
     
-# mutliply by the height of each cell - add new axes to bounds to allow for this
+# mutliply by the height of each cell 
 ukca.data = ukca.data * bounds
 classic.data = classic.data * bounds
 
