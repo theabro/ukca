@@ -7,4 +7,4 @@ Scripts for working with the UKCA Composition-Climate Model: www.ukca.ac.uk
 
 if using [Miniconda3](https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
-They will have errors if using Iris 2.4.0.
+They will have errors if using Iris 2.4.0 unless version 1.2.1 of `cftime` is installed (they will fail with version 1.3.0).
