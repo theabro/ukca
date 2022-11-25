@@ -77,8 +77,7 @@ cfp.levs(min=200, max=450, step=25)
 
 cfp.gopen()
 cfp.mapset(proj='spstere', boundinglat=-30, lon_0=0)
-# cannot seem to include titles in SH plots!
-cfp.con(ukca, lines=False)#, title='UKCA Total Column Ozone (DU) '+month_names[imonth-1]+' '+str(iyear))
+cfp.con(ukca, lines=False, title='UKCA Total Column Ozone (DU) '+month_names[imonth-1]+' '+str(iyear))
 cfp.gclose()
 
 
@@ -86,8 +85,7 @@ cfp.gclose()
 
 
 cfp.mapset(proj='spstere', boundinglat=-30, lon_0=0)
-# cannot seem to include titles in SH plots!
-cfp.con(obs, lines=False)#, title='Bodeker Total Column Ozone (DU) '+month_names[imonth-1]+' '+str(iyear))
+cfp.con(obs, lines=False, title='Bodeker Total Column Ozone (DU) '+month_names[imonth-1]+' '+str(iyear))
 
 
 # In[9]:
@@ -117,8 +115,7 @@ cfp.levs(manual=[-20,-15,-10,-5,-1,1,5,10,15,20])
 # use bwr
 cfp.cscale(scale='BlWhRe')
 cfp.mapset(proj='spstere', boundinglat=-30, lon_0=0)
-# cannot seem to include titles in SH plots!
-cfp.con(diff_pc, lines=False)#, title='% Difference (UKCA-Bodeker) '+month_names[imonth-1]+' '+str(iyear))
+cfp.con(diff_pc, lines=False, title='% Difference (UKCA-Bodeker) '+month_names[imonth-1]+' '+str(iyear))
 
 
 # In[12]:
@@ -129,8 +126,7 @@ cfp.levs(manual=[-75,-60,-45,-30,-15,-1,1,15,30,45,60,75])
 # use bwr
 cfp.cscale(scale='BlWhRe')
 cfp.mapset(proj='spstere', boundinglat=-30, lon_0=0)
-# cannot seem to include titles in SH plots!
-cfp.con(diff_abs, lines=False)#, title='Absolute Difference (UKCA-Bodeker) '+month_names[imonth-1]+' '+str(iyear))
+cfp.con(diff_abs, lines=False, title='Absolute Difference (UKCA-Bodeker) '+month_names[imonth-1]+' '+str(iyear))
 
 
 # In[ ]:

@@ -111,7 +111,7 @@ cf.write(aod, '/home/vagrant/Task125_AOD.nc', fmt='NETCDF4')
 
 
 # now read-in the Task 12.2 field and calculate the difference from this
-aod_T122=cf.read('/home/vagrant/Task125_AOD.nc', select='atmosphere_optical_thickness_due_to_aerosol')[0]
+aod_T122=cf.read('/home/vagrant/Task122_AOD.nc', select='atmosphere_optical_thickness_due_to_aerosol')[0]
 
 
 # In[14]:
