@@ -1,0 +1,11 @@
+In order to test run VISION toolkit V2.0:
+
+1) (Optional) make a copy of input.json
+
+2) change the output directory and output file name to your preferred choices
+
+3) ensure you have activated the appropriate python environment 
+
+4) run the VISION tolkit by typing:
+python3 visiontoolkit.py --config-file="input.json"
+
