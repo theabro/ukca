@@ -1,6 +1,6 @@
 {
     "obs-data-path":"/home/vagrant/Tutorials/UMvn13.9/data/Task16/VISION_input/Obs/core_faam_20140704_b860_MAGIC.nc",
-    "model-data-path":"/home/vagrant/Tutorials/UMvn13.9/data/Task16/VISION_input/Model/cu086a.pp20140704.pp",
+    "model-data-path":"/home/vagrant/Tutorials/UMvn13.9/data/Task16/VISION_input/Model/cq626a.pp20140704.pp",
     "orography":"/home/vagrant/Tutorials/UMvn13.9/data/Task16/VISION_input/Obs/orography.pp",
     "chosen-obs-field":false,
     "chosen-model-field":false,
